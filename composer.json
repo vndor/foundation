@@ -1,0 +1,24 @@
+{
+	"name": "aphp/foundation",
+	"description": "php foundation classes",
+	"keywords": [ 
+		"PHP", "foundation", "classes", "exceptions", "validator", "validation", "common", "container"
+	],
+	"type": "php",
+	"license": "MIT",
+	"minimum-stability": "dev",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"aphp\\Foundation\\" : "src/"
+		},
+		"files": [
+			"src/Functions.php"
+		]
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Pimple\\Tests\\Fixtures\\" : "tests/Fixtures"
+		}
+	}
+}
