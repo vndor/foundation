@@ -1,5 +1,5 @@
 {
-	"name": "aphp/foundation",
+	"name": "vndor/foundation",
 	"description": "php foundation classes",
 	"keywords": [ 
 		"PHP", "foundation", "classes", "exceptions", "validator", "validation", "common", "container"
@@ -10,7 +10,7 @@
 	"require": {},
 	"autoload": {
 		"psr-4": {
-			"aphp\\Foundation\\" : "src/"
+			"vndor\\Foundation\\" : "src/"
 		},
 		"files": [
 			"src/Functions.php"
