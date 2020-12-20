@@ -2,7 +2,7 @@
 
 namespace Pimple\Tests;
 
-use aphp\Foundation\Container;
+use vndor\Foundation\Container;
 
 /**
  * @author Igor Wiedler <igor@wiedler.ch>
@@ -82,7 +82,7 @@ class PimpleTest extends \PHPUnit_Framework_TestCase
 	}
 
 	/**
-	 * @expectedException \aphp\Foundation\UnknownIdentifierException
+	 * @expectedException \vndor\Foundation\UnknownIdentifierException
 	 * @expectedExceptionMessage Identifier "foo" is not defined.
 	 */
 	public function testOffsetGetValidatesKeyIsPresent()
@@ -179,7 +179,7 @@ class PimpleTest extends \PHPUnit_Framework_TestCase
 	}*/
 
 	/**
-	 * @expectedException \aphp\Foundation\UnknownIdentifierException
+	 * @expectedException \vndor\Foundation\UnknownIdentifierException
 	 * @expectedExceptionMessage Identifier "foo" is not defined.
 	 */
 	public function testRawValidatesKeyIsPresent()
@@ -250,7 +250,7 @@ class PimpleTest extends \PHPUnit_Framework_TestCase
 	}
 
 	/**
-	 * @expectedException \aphp\Foundation\UnknownIdentifierException
+	 * @expectedException \vndor\Foundation\UnknownIdentifierException
 	 * @expectedExceptionMessage Identifier "foo" is not defined.
 	 */
 	public function testExtendValidatesKeyIsPresent()
@@ -299,7 +299,7 @@ class PimpleTest extends \PHPUnit_Framework_TestCase
 
 	/**
 	 * @dataProvider badServiceDefinitionProvider
-	 * @expectedException \aphp\Foundation\ExpectedInvokableException
+	 * @expectedException \vndor\Foundation\ExpectedInvokableException
 	 * @expectedExceptionMessage Service definition is not a Closure or invokable object.
 	 */
 	public function testFactoryFailsForInvalidServiceDefinitions($service)
@@ -322,7 +322,7 @@ class PimpleTest extends \PHPUnit_Framework_TestCase
 
 	/**
 	 * @dataProvider badServiceDefinitionProvider
-	 * @expectedException \aphp\Foundation\ExpectedInvokableException
+	 * @expectedException \vndor\Foundation\ExpectedInvokableException
 	 * @expectedExceptionMessage Callable is not a Closure or invokable object.
 	 */
 	public function testProtectFailsForInvalidServiceDefinitions($service)
@@ -345,7 +345,7 @@ class PimpleTest extends \PHPUnit_Framework_TestCase
 
 	/**
 	 * @dataProvider badServiceDefinitionProvider
-	 * @expectedException \aphp\Foundation\InvalidServiceIdentifierException
+	 * @expectedException \vndor\Foundation\InvalidServiceIdentifierException
 	 * @expectedExceptionMessage Identifier "foo" does not contain an object definition.
 	 */
 	public function testExtendFailsForKeysNotContainingServiceDefinitions($service)
@@ -370,7 +370,7 @@ class PimpleTest extends \PHPUnit_Framework_TestCase
 
 /**
 	 * @group legacy
-	 * @expectedException \aphp\Foundation\InvalidServiceIdentifierException
+	 * @expectedException \vndor\Foundation\InvalidServiceIdentifierException
 	 * @expectedExceptionMessage Container->extend("foo") , "foo" is PROTECTED
 	 */
 	public function testExtendingProtectedClosureDeprecation()
@@ -389,7 +389,7 @@ class PimpleTest extends \PHPUnit_Framework_TestCase
 
 	/**
 	 * @dataProvider badServiceDefinitionProvider
-	 * @expectedException \aphp\Foundation\ExpectedInvokableException
+	 * @expectedException \vndor\Foundation\ExpectedInvokableException
 	 * @expectedExceptionMessage Extension service definition is not a Closure or invokable object.
 	 */
 	public function testExtendFailsForInvalidServiceDefinitions($service)
@@ -413,7 +413,7 @@ class PimpleTest extends \PHPUnit_Framework_TestCase
 	}
 
 	/**
-	 * @expectedException \aphp\Foundation\FrozenServiceException
+	 * @expectedException \vndor\Foundation\FrozenServiceException
 	 * @expectedExceptionMessage Cannot override frozen service "foo".
 	 */
 	public function testExtendFailsIfFrozenServiceIsNonInvokable()
@@ -428,7 +428,7 @@ class PimpleTest extends \PHPUnit_Framework_TestCase
 	}
 
 	/**
-	 * @expectedException \aphp\Foundation\FrozenServiceException
+	 * @expectedException \vndor\Foundation\FrozenServiceException
 	 * @expectedExceptionMessage Cannot override frozen service "foo".
 	 */
 	public function testExtendFailsIfFrozenServiceIsInvokable()
@@ -484,7 +484,7 @@ class PimpleTest extends \PHPUnit_Framework_TestCase
 	}
 
 	/**
-	 * @expectedException \aphp\Foundation\FrozenServiceException
+	 * @expectedException \vndor\Foundation\FrozenServiceException
 	 * @expectedExceptionMessage Cannot override frozen service "foo".
 	 */
 	public function testOverridingServiceAfterFreeze()

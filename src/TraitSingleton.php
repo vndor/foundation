@@ -1,6 +1,6 @@
 <?php 
 
-namespace aphp\Foundation;
+namespace vndor\Foundation;
 
 /* 
 class::initInstance()

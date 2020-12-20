@@ -16,7 +16,7 @@ if (php_sapi_name() !== 'cli') {
 	header("Content-Type: text/plain");
 }
 
-class MyException extends aphp\Foundation\AException 
+class MyException extends vndor\Foundation\AException 
 {	
 	static function dirIsNotExists($dir)
 	{

@@ -16,7 +16,7 @@ if (php_sapi_name() !== 'cli') {
 	header("Content-Type: text/plain");
 }
 
-class MyExceptions extends aphp\Foundation\AException 
+class MyExceptions extends vndor\Foundation\AException 
 {	
 	
 }

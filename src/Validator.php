@@ -1,5 +1,5 @@
 <?php
-namespace aphp\Foundation;
+namespace vndor\Foundation;
 
 // see
 // 	example/example-validation.php

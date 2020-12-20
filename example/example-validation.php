@@ -57,8 +57,8 @@ if (php_sapi_name() !== 'cli') {
 	header("Content-Type: text/plain");
 }
 
-use function aphp\Foundation\validate;
-use aphp\Foundation\AException as VE;
+use function vndor\Foundation\validate;
+use vndor\Foundation\AException as VE;
 
 class Foo {
 	public $file;
@@ -68,11 +68,11 @@ class Foo {
 		$this->file = validate('is_file', 'invalid/path');
 	}
 	public function fileExec2() {
-		$this->file = new aphp\Foundation\ANullObject;
+		$this->file = new vndor\Foundation\ANullObject;
 		$this->file->name = validate('is_file', 'invalid/path');
 	}
 	public function fileExec3() {
-		$this->file = new aphp\Foundation\ANullObject;
+		$this->file = new vndor\Foundation\ANullObject;
 		$this->file->getValue()->dd = validate(function(){
 			return INVALID;
 		});

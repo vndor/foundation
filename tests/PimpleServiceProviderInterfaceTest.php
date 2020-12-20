@@ -2,7 +2,7 @@
 
 namespace Pimple\Tests;
 
-use aphp\Foundation\Container;
+use vndor\Foundation\Container;
 use Pimple\Tests\Fixtures\PimpleServiceProvider;
 use Pimple\Tests\Fixtures\PimpleServiceProviderContainer;
 use Pimple\Tests\Fixtures\Service;

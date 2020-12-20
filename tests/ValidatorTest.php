@@ -1,6 +1,6 @@
 <?php
-use aphp\Foundation\Validator;
-use aphp\Foundation\AException;
+use vndor\Foundation\Validator;
+use vndor\Foundation\AException;
 
 class MockValidator extends Validator
 {

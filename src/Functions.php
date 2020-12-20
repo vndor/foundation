@@ -1,5 +1,5 @@
 <?php
-namespace aphp\Foundation;
+namespace vndor\Foundation;
 
 function validate($validation, $value = null, $exceptionText = null)
 {

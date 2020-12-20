@@ -2,7 +2,7 @@
 
 require '../vendor/autoload.php';
 
-use function aphp\Foundation\validate;
+use function vndor\Foundation\validate;
 
 if (php_sapi_name() !== 'cli') {
 	header("Content-Type: text/plain");

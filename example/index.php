@@ -6,7 +6,7 @@ $files = array_diff(scandir($path), array('.', '..', 'index.php', 'startServer.b
 
 sort($files);
 
-echo '<h2>aphp/Foundation - example</h2>';
+echo '<h2>vndor/Foundation - example</h2>';
 
 foreach ($files as $f) {
 	echo '<a href="/'. $f . '">' . $f . '</a><br>';

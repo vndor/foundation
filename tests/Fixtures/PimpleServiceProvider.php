@@ -2,8 +2,8 @@
 
 namespace Pimple\Tests\Fixtures;
 
-use aphp\Foundation\Container;
-use aphp\Foundation\ContainerProviderInterface;
+use vndor\Foundation\Container;
+use vndor\Foundation\ContainerProviderInterface;
 
 class PimpleServiceProvider implements ContainerProviderInterface
 {

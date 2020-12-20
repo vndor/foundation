@@ -1,6 +1,6 @@
 <?php
 namespace Pimple\Tests;
-use aphp\Foundation\Container;
+use vndor\Foundation\Container;
 
 class MagicMethodsTest extends \PHPUnit_Framework_TestCase {
 
@@ -85,7 +85,7 @@ class MagicMethodsTest extends \PHPUnit_Framework_TestCase {
 	// unfreeze
 
 	/**
-	 * @expectedException \aphp\Foundation\FrozenServiceException
+	 * @expectedException \vndor\Foundation\FrozenServiceException
 	 */
 	public function testUnfreezeExeption()
 	{
@@ -99,7 +99,7 @@ class MagicMethodsTest extends \PHPUnit_Framework_TestCase {
 	}
 
 	/**
-	 * @expectedException \aphp\Foundation\FrozenServiceException
+	 * @expectedException \vndor\Foundation\FrozenServiceException
 	 */
 	public function testUnfreeze()
 	{

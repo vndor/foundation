@@ -4,7 +4,7 @@
 ![PHP Support](https://img.shields.io/badge/php-7-brightgreen.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-`aphp\Foundation\Container` is a small Dependency Injection Container for PHP.
+`vndor\Foundation\Container` is a small Dependency Injection Container for PHP.
 
 See https://github.com/GonistLelatel/Pimple
 
@@ -26,7 +26,7 @@ Provider-containers `connectTo($Root-container)` and build the root-container pr
 
 Creating a container is a matter of creating a ``Container`` instance:
 ```php
-use aphp\Foundation\Container;
+use vndor\Foundation\Container;
 
 $container = new Container();
 ```
@@ -204,11 +204,11 @@ that gets access to the object instance and the container.
 
 If you use the same libraries over and over, you might want to reuse some
 services from one project to the next one; package your services into a
-**provider** by implementing `aphp\Foundation\ContainerProviderInterface`:
+**provider** by implementing `vndor\Foundation\ContainerProviderInterface`:
 
 ```php
-use aphp\Foundation\Container;
-use aphp\Foundation\ContainerProviderInterface;
+use vndor\Foundation\Container;
+use vndor\Foundation\ContainerProviderInterface;
 
 class FooProvider implements ContainerProviderInterface
 {
@@ -275,4 +275,4 @@ On linux use *.sh files like *.bat files
 
 For more features:
 * Read source code and examples
-* Practice with `aphp\Foundation\Container` in real code
+* Practice with `vndor\Foundation\Container` in real code

@@ -1,5 +1,5 @@
 <?php
-namespace aphp\Foundation;
+namespace vndor\Foundation;
 
 interface ContainerProviderInterface
 {

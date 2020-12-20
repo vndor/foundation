@@ -4,7 +4,7 @@
 ![PHP Support](https://img.shields.io/badge/php-7-brightgreen.svg)
 ![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Travis](https://travis-ci.org/GonistLelatel/aphp_foundation.svg?branch=master)
+![Travis](https://travis-ci.org/GonistLelatel/vndor_foundation.svg?branch=master)
 
 ![PackageGenerator](images/package-gen.jpg)
 
@@ -15,7 +15,7 @@
 ## Installation
 
 ```
-composer require aphp/foundation ~2.0.0
+composer require vndor/foundation ~2.0.0
 ```
 ## Classes
 
@@ -43,7 +43,7 @@ composer require aphp/foundation ~2.0.0
 * Validator
 	* used to throw exceptions for invalid values
 
-<details><summary><b>&#x1F535; APHP Packages list</b></summary>
+<details><summary><b>&#x1F535; vndor Packages list</b></summary>
 <p>
 
 ![Class map](https://gonistlelatel.github.io/resources/foundation/map.jpg)
@@ -54,14 +54,14 @@ composer require aphp/foundation ~2.0.0
 
 ![PackageGenerator](images/package-gen.jpg)
 
-`Composer package generator` used to generate new packages as PSR-4 with `aphp/foundation` integration
+`Composer package generator` used to generate new packages as PSR-4 with `vndor/foundation` integration
 
 * see [projectGen2](https://github.com/GonistLelatel/projectGen2)
 * shell example:
 	```
-	> mkdir aphp_pakagename
-	> cd aphp_pakagename
-	> projectGen --p composerPackage --t . --vendor aphp --name pakagename --namespace PakageNameSpace
+	> mkdir vndor_pakagename
+	> cd vndor_pakagename
+	> projectGen --p composerPackage --t . --vendor vndor --name pakagename --namespace PakageNameSpace
 	```
 
 <details><summary><b>&#x1F535; Functions Autoloader</b></summary>
@@ -71,7 +71,7 @@ composer require aphp/foundation ~2.0.0
 
 ```php
 <?php
-namespace aphp\Foundation;
+namespace vndor\Foundation;
 
 class FunctionsAutoloader {
 	static function autoload() { }
@@ -88,7 +88,7 @@ Solution:
 <?php
 namespace vendor/package;
 
-class Functions extends \aphp\Foundation\FunctionsAutoloader { }
+class Functions extends \vndor\Foundation\FunctionsAutoloader { }
 
 function foo() {
 
@@ -149,7 +149,7 @@ class Validator
 Example usage with global function "validate":
 
 ```php
-use function aphp\Foundation\validate;
+use function vndor\Foundation\validate;
 
 $file = validate('is_file', 'invalid/path'); // throws
 $file = validate('is_file', __FILE__); // ok
@@ -178,7 +178,7 @@ $file = validate(['is_string','file_exists'], new StdClass); // no error, throws
 ```
 Inheritance
 ```php
-use function aphp\Foundation\validate;
+use function vndor\Foundation\validate;
 
 class MyValidator extends Validator {
 	protected function isValid($value) {

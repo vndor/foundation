@@ -16,7 +16,7 @@ if (php_sapi_name() !== 'cli') {
 	header("Content-Type: text/plain");
 }
 
-$null = new aphp\Foundation\ANullObject;
+$null = new vndor\Foundation\ANullObject;
 
 $null->method1();
 $null->method2(1, 2);
